@@ -2,6 +2,7 @@
 # Explorando o Automated Machine Learning no Azure Machine Learning
 
 Este guia descreve como utilizar o recurso de aprendizado de máquina automatizado (AutoML) no Azure Machine Learning para treinar, avaliar, implantar e testar um modelo.
+## (modelo de previsão com seus devidos pontos de extremidade configurados)
 
 ---
 
@@ -44,21 +45,21 @@ Este guia descreve como utilizar o recurso de aprendizado de máquina automatiza
 2. Crie um novo trabalho de AutoML com as configurações:
 
    - **Nome do trabalho**: Use o valor padrão.
-   - **Novo experimento**: `mslearn-bike-rental`
-   - **Descrição**: `Automated machine learning for bike rental prediction`
+   - **Novo experimento**: `aluguel de barcos`
+   - **Descrição**: `Aprendizado de máquina automatizado para previsão de aluguel de Barcos`
 
 3. Configure o dataset:
    - Crie um novo dataset:
-     - **Nome**: `bike-rentals`
-     - **Descrição**: `Historic bike rental data`
+     - **Nome**: `aluguel de Barcos`
+     - **Descrição**: `Dados históricos de aluguel de Barcos`
      - **Tipo**: Tabela (mltable)
-     - **Fonte**: Arquivo local (baixe os dados [aqui](https://aka.ms/bike-rentals)).
+     - **Fonte**: Arquivo local ou (baixe os dados ))
      - Armazene em `workspaceblobstore`.
 
 4. Configure o tipo de tarefa:
    - **Tipo de tarefa**: Regressão.
-   - **Coluna alvo**: `rentals`.
-   - **Modelos permitidos**: Apenas `RandomForest` e `LightGBM`.
+   - **Coluna alvo**: `aluguéis`.
+   - **Modelos permitidos**: Apenas `RandomForest` e `LightGBM`. (ou conforme seu projeto exija) 
 
 5. Ajuste as configurações:
    - **Número máximo de tentativas**: 3.
@@ -67,7 +68,7 @@ Este guia descreve como utilizar o recurso de aprendizado de máquina automatiza
 
 6. Configure a computação:
    - **Tipo**: Serverless.
-   - **Máquina virtual**: Standard_DS3_V2.
+   - **Máquina virtual**: Standard_DS3_V2. (Conforme o projeto exija)
 
 7. Submeta o trabalho e aguarde a conclusão.
 
