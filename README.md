@@ -86,24 +86,7 @@ Este guia descreve como utilizar o recurso de aprendizado de máquina automatiza
    - **Endpoint**: Crie um novo endpoint com nome exclusivo.
    - **Inferencing data collection** e **Package model**: Desativados.
 
-2. Aguarde a conclusão da implantação.
+Aguarde a conclusão da implantação.
 
-### 6. Consumir o Endpoint
 
-1. Após a implantação, copie o URL e a chave do endpoint.
-2. Use uma ferramenta como `curl` ou Python para consumir o modelo:
-
-```python
-import requests
-
-url = "<ENDPOINT_URL>"
-headers = {
-    "Content-Type": "application/json",
-    "Authorization": f"Bearer <YOUR_KEY>"
-}
-data = {"input": [[value1, value2, ...]]}
-
-response = requests.post(url, json=data, headers=headers)
-print(response.json())
-```
 
