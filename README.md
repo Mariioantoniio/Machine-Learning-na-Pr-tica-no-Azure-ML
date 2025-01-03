@@ -1,7 +1,7 @@
 # Machine-Learning-na-Prtica-no-Azure-ML
 # Explorando o Automated Machine Learning no Azure Machine Learning
 
-Este guia descreve como utilizar o recurso de aprendizado de máquina automatizado (AutoML) no Azure Machine Learning para treinar, avaliar, implantar e testar um modelo. Este exercício deve levar cerca de 35 minutos para ser concluído.
+Este guia descreve como utilizar o recurso de aprendizado de máquina automatizado (AutoML) no Azure Machine Learning para treinar, avaliar, implantar e testar um modelo.
 
 ---
 
